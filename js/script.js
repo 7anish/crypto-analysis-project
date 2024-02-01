@@ -16,7 +16,7 @@ const getdata = async () => {
             </div>
             <hr>
             <div class="coin-details">
-                <h2>rank - ${data[i].rank}<sup>st</sup></h2>
+                <h2>rank - ${data[i].rank}</h2>
                 <h2>price - $${(data[i].quotes.USD.price).toFixed(3)}</h2>
             </div>
         </div>`
@@ -31,7 +31,7 @@ const getdata = async () => {
             </div>
             <hr>
             <div class="coin-details">
-                <h2>rank - ${data[i].rank}<sup>st</sup></h2>
+                <h2>rank - ${data[i].rank}</h2>
                 <h2>price - $${(data[i].quotes.USD.price).toFixed(3)}</h2>
             </div>
         </div>`
