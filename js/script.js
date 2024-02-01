@@ -56,35 +56,35 @@ getdata();
 const vistitBtn = document.querySelector(".one-button");
 
 vistitBtn.addEventListener('click' , ()=>{
-    window.location.href = "/market/market.html";
+    window.location.href = "https://7anish.github.io/crypto-analysis-project/market/market.html";
 })
 
 
 const vistitBtn1 = document.querySelector(".box1");
 
 vistitBtn1.addEventListener('click' , ()=>{
-    window.location.href = "/market/market.html"; 
+    window.location.href = "https://7anish.github.io/crypto-analysis-project/market/market.html"; 
 }
 )
 
 const vistitBtn2 = document.querySelector(".box2");
 
 vistitBtn2.addEventListener('click' , ()=>{
-    window.location.href = "/crypto/crypto.html"; 
+    window.location.href = "https://7anish.github.io/crypto-analysis-project/crypto/crypto.html"; 
 }
 )
 
 const showCoins = document.querySelector(".show-more-coin");
 
 showCoins.addEventListener('click' , ()=>{
-    window.location.href = "/crypto/crypto.html"; 
+    window.location.href = "https://7anish.github.io/crypto-analysis-project/crypto/crypto.html"; 
 }
 )
 
 const vistitBtn3 = document.querySelector(".box3");
 
 vistitBtn3.addEventListener('click' , ()=>{
-    window.location.href = "/news/news.html"; 
+    window.location.href = "https://7anish.github.io/crypto-analysis-project/news/news.html"; 
 }
 )
 
@@ -92,6 +92,6 @@ vistitBtn3.addEventListener('click' , ()=>{
 const expmarket = document.querySelector(".explore-market");
 
 expmarket.addEventListener('click' , ()=>{
-    window.location.href = "/market/market.html";
+    window.location.href = "https://7anish.github.io/crypto-analysis-project/market/market.html";
     // console.log("hello");
 })
