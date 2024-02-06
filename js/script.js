@@ -9,7 +9,7 @@ const getdata = async () => {
             let html = ``;
             if (data[i].quotes.USD.percent_change_24h < 0) {
                 sing = '&#9660;'
-                html = `<div class="coin-box">
+                html = `<div class="coin-box coin-box-appear">
             <div class="coin-name">
                 <h2>${data[i].name} (${data[i].symbol})</h2>
                 <h4 style="color: red;">${sing}${data[i].quotes.USD.percent_change_24h}%</h4>
@@ -24,7 +24,7 @@ const getdata = async () => {
 
             else {
                 sing = '&#9650;'
-                html = `<div class="coin-box">
+                html = `<div class="coin-box coin-box-appear">
             <div class="coin-name">
                 <h2>${data[i].name} (${data[i].symbol})</h2>
                 <h4 style="color: green;">${sing}${data[i].quotes.USD.percent_change_24h}%</h4>
@@ -95,3 +95,16 @@ expmarket.addEventListener('click' , ()=>{
     window.location.href = "https://7anish.github.io/crypto-analysis-project/market/market.html";
     // console.log("hello");
 })
+
+
+// ===section2 animation=========
+
+const secTwo = document.querySelector(".section-one");
+secTwo.addEventListener("mouseleave" , ()=>{
+    const boxes = document.querySelectorAll(".coin-box");
+    boxes.forEach(boxes =>{
+        boxes.classList.remove("coin-box-appear")
+        boxes.classList.add("coin-box-animation")
+    })
+})
+

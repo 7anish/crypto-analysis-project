@@ -362,6 +362,7 @@ header {
 }
 
 .box:hover {
+    width: 43rem;
     cursor: pointer;
     background-color: rgba(255, 255, 255, .3);
 
@@ -381,7 +382,7 @@ header {
     height: 90vh;
     background-color: var(--black-baground);
     color: var(--white);
-    /* animation: slide 1s 1 linear reverse ; */
+    overflow: hidden;
 }
 
 .two-heading {
@@ -404,6 +405,7 @@ header {
     grid-row-gap: 4rem;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
+    overflow: hidden;
 }
 
 .coin-box {
@@ -433,6 +435,29 @@ header {
         padding: 2rem;
         text-transform: capitalize;
         color: var(--gray);
+    }
+
+}
+
+.coin-box-appear {
+    filter: opacity(0);
+}
+
+.coin-box-animation {
+    animation: appear 1s 1 linear;
+}
+
+@keyframes appear {
+    0% {
+        transform: translateY(-70%);
+    }
+
+    50% {
+        transform: translateY(-35%);
+    }
+
+    100% {
+        transform: translateY(0%);
     }
 }
 
@@ -1248,10 +1273,11 @@ textarea:focus {
     }
 
     /* ==================== footer starts=================== */
-    footer{
+    footer {
         height: 40vh;
         overflow: hidden;
     }
+
     .footer-head {
         padding-inline: 4rem;
         height: 13vh;
@@ -1265,23 +1291,113 @@ textarea:focus {
         }
     }
 
-    .footer-bottom{
+    .footer-bottom {
         height: 20vh;
         flex-direction: column;
         padding-right: 7rem;
         align-items: end;
-        & ul{
+
+        & ul {
             flex-direction: column;
             align-items: end;
         }
     }
 
     /* ==================== footer ends=================== */
+
+    /* ====================== section-one starts============ */
+    .section-one {
+        height: 140vh;
+    }
+
+    .onecontainer-box {
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+    }
+
+    .one-heading {
+        height: auto;
+        font-size: 7rem;
+        text-wrap: wrap;
+        text-align: center;
+    }
+
+    .one-para {
+        text-wrap: wrap;
+        padding: 0 7rem;
+    }
+
+    .one-button {
+        display: none;
+    }
+
+    /* ====================== section-one ends============ */
+    /* ====================== section-two starts============ */
+    .coin-box-appear{
+        filter: opacity(1);
+    }
+    .coin-box-animation {
+        animation:none;
+    }
+
+    .section-two-continer{
+        height: 180vh;
+    }
+
+    .coin-list {
+        height: 150vh;
+        grid-template-columns: repeat(1,1fr);
+    }
+    /* ====================== section-two ends============ */
+    /* ====================== section-three starts============ */
+    .section-three{
+        height: 105vh;
+    }
+    .section-three-heading{
+       padding-top: 6rem; 
+    }
+    .section-three-container{
+        flex-direction: column;
+        gap: 4rem;
+        padding: 0rem;
+        padding-bottom: 7rem;
+
+        & .details{
+            /* padding: 0 15rem;
+             */
+             width: 100vw;
+             padding: 20rem 3rem;
+
+             & h1{
+                text-wrap: wrap;
+                font-size: 3.6rem;
+             }
+
+             & p{
+                padding: 0rem;
+                padding-right: 3rem;
+                text-align: starts;
+                line-height: 2.5rem;
+             }
+
+        }
+    }
+    /* ====================== section-three ends============ */
+
+    /* ======================header-starts============ */
 }
 
-@media (width < 350px) {
+@media (width < 400px) {
     html {
-        font-size: 35%;
-        /* 1rem = 10px */
+        font-size: 40%;
+    }
+
+    .section-one {
+        height: 120vh;
+    }
+
+    .one-para {
+        padding: 0 12rem;
     }
 }
