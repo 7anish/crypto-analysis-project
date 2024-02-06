@@ -1244,17 +1244,18 @@ textarea:focus {
 
 @media (width < 450px) {
     html {
-        font-size: 40%;
-        /* 1rem = 10px */
+        font-size: 45%;
     }
 
     /* ==================== footer starts=================== */
     footer{
-        height: 35vh;
+        height: 40vh;
+        overflow: hidden;
     }
     .footer-head {
         padding-inline: 4rem;
-        height: 10vh;
+        height: 13vh;
+        margin-top: -3rem;
 
         & .footer-links {
             & i {
@@ -1278,7 +1279,7 @@ textarea:focus {
     /* ==================== footer ends=================== */
 }
 
-@media (width < 450px) {
+@media (width < 350px) {
     html {
         font-size: 35%;
         /* 1rem = 10px */
