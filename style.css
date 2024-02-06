@@ -221,19 +221,19 @@ header {
 }
 
 @keyframes slide {
-    0%{
+    0% {
         transform: translateX(100%);
     }
 
-    50%{
+    50% {
         transform: translateX(50%);
     }
 
-    70%{
+    70% {
         transform: translateX(30%);
     }
 
-    100%{
+    100% {
         transform: translateX(0%);
     }
 }
@@ -248,8 +248,9 @@ header {
     gap: 5rem;
     align-items: center;
     padding-top: 10rem;
-    animation: slide 1s 1 linear ;
+    animation: slide 1s 1 linear;
 }
+
 .onecontainer-box {
     display: flex;
     flex-direction: row;
@@ -778,7 +779,7 @@ footer {
         & img {
             width: 50rem;
             border-radius: 2rem;
-            box-shadow:  0 0 2rem var(--white);
+            box-shadow: 0 0 2rem var(--white);
         }
     }
 
@@ -974,12 +975,14 @@ tr:hover {
     flex-direction: row-reverse;
 }
 
+@media (width < 450px) {}
+
 /* =======================aboutus page Ends========================= */
 
 
 /* =======================contact-us page starts========================= */
 
-.contact-one{
+.contact-one {
     width: 100vw;
     height: auto;
     /* background-color: pink; */
@@ -987,13 +990,14 @@ tr:hover {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    padding:8rem ;
+    padding: 8rem;
     gap: 5rem;
     /* background-color: var(--black-baground); */
     background: var(--section3-bg1);
     background: var(--section3-bg2);
 }
-.contact-detail{
+
+.contact-detail {
     width: 50%;
     height: auto;
     /* padding-block: 5rem ; */
@@ -1001,15 +1005,15 @@ tr:hover {
     color: var(--gray);
     padding-left: 5rem;
 
-    & h1{
+    & h1 {
         font-size: 5rem;
         text-transform: capitalize;
         font-weight: bolder;
         letter-spacing: .4rem;
-        margin-bottom:2rem;
+        margin-bottom: 2rem;
     }
 
-    & h3{
+    & h3 {
         font-size: 2.2rem;
         font-weight: bold;
         /* letter-spacing: .3rem; */
@@ -1018,19 +1022,21 @@ tr:hover {
     }
 
 }
-.map-continer{
+
+.map-continer {
     width: 45%;
     height: 40rem;
 
-    & iframe{
+    & iframe {
         width: 100%;
         height: 100%;
-        box-shadow:  0 0 2rem var(--white);
+        box-shadow: 0 0 2rem var(--white);
     }
+
     /* background-color: antiquewhite; */
 }
 
-.contact-hero{
+.contact-hero {
     width: 100vw;
     height: 80vh;
     /* background-color: chocolate; */
@@ -1045,7 +1051,7 @@ tr:hover {
     /* border: 10px solid red; */
 }
 
-.right{
+.right {
     width: 50%;
     height: 100%;
     /* background-color: antiquewhite; */
@@ -1055,13 +1061,13 @@ tr:hover {
     padding: 3rem;
     /* background-color: rgba(255,255,255, .2); */
 
-    & h1{
+    & h1 {
         font-size: 6rem;
         color: var(--gray);
         /* text-decoration: ; */
     }
 
-    & p{
+    & p {
         font-size: 2.4rem;
         font-weight: bold;
         color: var(--gray);
@@ -1071,11 +1077,11 @@ tr:hover {
 }
 
 
-.cotact-form{
+.cotact-form {
     width: 50%;
     height: 100%;
     /* background-color: antiquewhite; */
-    background-color: rgba(255,255,255, .2);
+    background-color: rgba(255, 255, 255, .2);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1086,7 +1092,8 @@ tr:hover {
     position: relative;
     overflow: hidden;
 
-    & input , textarea{
+    & input,
+    textarea {
         /* cursor; */
         width: 70%;
         height: 4rem;
@@ -1097,26 +1104,26 @@ tr:hover {
         background-color: transparent;
     }
 
-    & h1{
+    & h1 {
         color: var(--purple);
         font-size: 5rem;
         position: absolute;
-        top:50%;
+        top: 50%;
         left: 100%;
         animation: form-sumbit 2s 1 ease-in-out;
     }
 
-    & .truck{
+    & .truck {
         font-size: 15rem;
         /* color: bisque; */
         color: var(--white);
         position: absolute;
-        top:50%;
+        top: 50%;
         left: 150%;
-        animation: truck-slide 2s  1 ease-in-out reverse;
+        animation: truck-slide 2s 1 ease-in-out reverse;
     }
 
-    & h2{
+    & h2 {
         font-size: 6rem;
         color: var(--white);
         text-transform: capitalize;
@@ -1124,60 +1131,60 @@ tr:hover {
 }
 
 @keyframes display {
-    0%{
+    0% {
         display: none;
     }
 
-    100%{
+    100% {
         display: contents;
     }
-    
+
 }
 
 @keyframes truck-slide {
-    0%{
-        left: 0 ;
+    0% {
+        left: 0;
         top: 50%;
-        transform: translate(-50% , -50%);
-    }  
-    
-    50%{
-        left: 47% ;
-        top: 50%;
-        transform: translate(-50% , -50%);
-        rotate: 10deg;
-    } 
+        transform: translate(-50%, -50%);
+    }
 
-    100%{
-        left: 100% ;
+    50% {
+        left: 47%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        rotate: 10deg;
+    }
+
+    100% {
+        left: 100%;
         top: 50%;
         /* rotate: -10deg; */
-        transform: translate(-50% , -50%);
-    } 
+        transform: translate(-50%, -50%);
+    }
 }
 
 @keyframes form-sumbit {
-    0%{
+    0% {
         top: -10%;
         left: 50%;
         rotate: -45deg;
-        transform: translate(-50% , -50%);
-    }  
-    
+        transform: translate(-50%, -50%);
+    }
+
     50% {
         top: 50%;
         left: 50%;
-        transform: translate(-50% ,-50%);
+        transform: translate(-50%, -50%);
     }
 
-    100%{
+    100% {
         top: 50%;
         left: -0%;
-        transform: translate(-50% ,-50%);
+        transform: translate(-50%, -50%);
     }
 }
 
-.sumbit-btn{
+.sumbit-btn {
     width: 15rem;
     height: 4rem;
     font-size: 1.6rem;
@@ -1189,22 +1196,24 @@ tr:hover {
     transition: all .3s;
 }
 
-.sumbit-btn:hover{
+.sumbit-btn:hover {
     cursor: pointer;
     background-color: var(--white);
     transform: translateY(-5%);
     color: var(--button-font-color);
 }
 
-input::placeholder , textarea::placeholder{
+input::placeholder,
+textarea::placeholder {
     color: var(--white);
     font-size: 1.6rem;
     padding-left: 1rem;
 }
 
-input:focus ,textarea:focus{
+input:focus,
+textarea:focus {
     /* border: 0; */
-    border-bottom: 3px solid  var(--white);
+    border-bottom: 3px solid var(--white);
     outline: none;
 
 }
@@ -1213,7 +1222,7 @@ input:focus ,textarea:focus{
 
 /* =======================news page starts========================= */
 
-.news-sec-one{
+.news-sec-one {
     width: 100vw;
     height: 80vh;
     display: grid;
@@ -1223,11 +1232,55 @@ input:focus ,textarea:focus{
     /* background-color: pink */
     filter: opacity(.9);
 
-    & h1{
+    & h1 {
         font-size: 6.8rem;
         font-weight: bolder;
         color: var(--white);
         text-transform: capitalize;
         z-index: 5;
     }
-}   
+}
+
+
+@media (width < 450px) {
+    html {
+        font-size: 40%;
+        /* 1rem = 10px */
+    }
+
+    /* ==================== footer starts=================== */
+    footer{
+        height: 35vh;
+    }
+    .footer-head {
+        padding-inline: 4rem;
+        height: 10vh;
+
+        & .footer-links {
+            & i {
+                padding: 0 1rem;
+                color: var(--gray);
+            }
+        }
+    }
+
+    .footer-bottom{
+        height: 20vh;
+        flex-direction: column;
+        padding-right: 7rem;
+        align-items: end;
+        & ul{
+            flex-direction: column;
+            align-items: end;
+        }
+    }
+
+    /* ==================== footer ends=================== */
+}
+
+@media (width < 450px) {
+    html {
+        font-size: 35%;
+        /* 1rem = 10px */
+    }
+}
