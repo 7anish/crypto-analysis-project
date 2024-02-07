@@ -11,11 +11,11 @@ const prinfCoin = async (num) => {
             let oneHrChange = ``;
             let oneDayChange = ``;
             let sevenDayChange = ``;
-            (data[i].quotes.USD.percent_change_1h >= 0) ? oneHrChange = `<td style="color: green;">&#9650;${data[i].quotes.USD.percent_change_1h} %</td>` : oneHrChange = `<td style="color: rgba(255, 0, 0, 0.7);">&#9660;${data[i].quotes.USD.percent_change_1h} %</td>`;
+            (data[i].quotes.USD.percent_change_1h >= 0) ? oneHrChange = `<td class="hidden" style="color: green;">&#9650;${data[i].quotes.USD.percent_change_1h} %</td>` : oneHrChange = `<td class="hidden" style="color: rgba(255, 0, 0, 0.7);">&#9660;${data[i].quotes.USD.percent_change_1h} %</td>`;
 
-            (data[i].quotes.USD.percent_change_24h >= 0) ? oneDayChange = `<td style="color: green;">&#9650;${data[i].quotes.USD.percent_change_1h} %</td>` : oneDayChange = `<td style="color: rgba(255, 0, 0, 0.7);">&#9660;${data[i].quotes.USD.percent_change_1h} %</td>`;
+            (data[i].quotes.USD.percent_change_24h >= 0) ? oneDayChange = `<td style="color: green;">&#9650;${data[i].quotes.USD.percent_change_24h} %</td>` : oneDayChange = `<td style="color: rgba(255, 0, 0, 0.7);">&#9660;${data[i].quotes.USD.percent_change_24h} %</td>`;
 
-            (data[i].quotes.USD.percent_change_7d >= 0) ? sevenDayChange = `<td style="color: green;">&#9650;${data[i].quotes.USD.percent_change_1h} %</td>` : sevenDayChange = `<td style="color: rgba(255, 0, 0, 0.7);">&#9660;${data[i].quotes.USD.percent_change_1h} %</td>`;
+            (data[i].quotes.USD.percent_change_7d >= 0) ? sevenDayChange = `<td class="hidden" style="color: green;">&#9650;${data[i].quotes.USD.percent_change_7d} %</td>` : sevenDayChange = `<td class="hidden" style="color: rgba(255, 0, 0, 0.7);">&#9660;${data[i].quotes.USD.percent_change_7d} %</td>`;
 
             let html = `<tr>
             <td>${data[i].rank}</td>
@@ -24,8 +24,8 @@ const prinfCoin = async (num) => {
             ${oneHrChange}
             ${oneDayChange}
             ${sevenDayChange}
-            <td>$ ${data[i].quotes.USD.market_cap}</td>
-            <td>$ ${(data[i].quotes.USD.volume_24h).toFixed(2)}</td>
+            <td class="hidden">$ ${data[i].quotes.USD.market_cap}</td>
+            <td class="hidden">$ ${(data[i].quotes.USD.volume_24h).toFixed(2)}</td>
         </tr>`
 
             table.insertAdjacentHTML('beforeend', html)

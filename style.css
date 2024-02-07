@@ -1385,7 +1385,27 @@ textarea:focus {
     }
     /* ====================== section-three ends============ */
 
-    /* ======================header-starts============ */
+    /* ======================crypto-page-starts============ */
+    .crypto-heading{
+        text-align: center;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    .crypto-top-bar {
+        padding: 4rem;
+    }
+    .btns{
+        width: 21rem;
+        
+        & button{
+            width: 21rem;
+            font-size: 1.4rem;
+            text-wrap: nowrap;
+        }
+    }
 }
 
 @media (width < 400px) {
@@ -1400,4 +1420,5 @@ textarea:focus {
     .one-para {
         padding: 0 15rem;
     }
+
 }
