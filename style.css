@@ -1571,10 +1571,10 @@ textarea:focus {
 .menu-bar {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 0vh;
     z-index: 1;
     /* background-color: pink; */
-    background-color: var(--black-baground);
+    background-color: var(--dark-button-color);
     width: 100vw;
     height: 40vh;
     display: grid;
@@ -1585,30 +1585,33 @@ textarea:focus {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        align-items: end;
-        gap: 2rem;
+        align-items: start;
+        gap: 2.5rem;
         margin-top: 5rem;
+        margin-left: -20rem;
 
         & li a {
             text-transform: capitalize;
             font-size: 2.8rem;
             text-decoration: none;
             font-weight: bolder;
-            color: var(--white);
+            color: var(--gray);
+            margin: 0;
         }
     }
+
 }
 
 @keyframes showmenu {
     0%{
-        transform: translateX(100%);
+        transform: translateY(-70%);
     }
     100%{
-        transform: translateX(0%);
+        transform: translateY(0%);
     }
 }
 
 .menu-bar1{
     filter: opacity(1);
-    animation: showmenu .6s 1 linear;
+    animation: showmenu .35s 1 linear;
 }
