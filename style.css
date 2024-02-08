@@ -867,7 +867,7 @@ footer {
 
     & td {
         border-bottom: 2px solid var(--white);
-        text-align: center;
+        text-align:left;
         padding-block: 2rem;
         padding-right: 1rem;
     }
@@ -1406,6 +1406,40 @@ textarea:focus {
             text-wrap: nowrap;
         }
     }
+
+    /* ======================crypto-page-ends============ */
+    /* ======================market-page-starts============ */
+    .mark-card-container {
+        flex-direction: column;
+        padding-block: 10rem;
+        gap: 5rem;
+    }
+
+    .mark-card{
+        transform: translateY(0);
+    }
+
+    .fear-card-container{
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+
+        & .fear-discriptoon{
+            width: 100%;
+            height: 50%;
+            
+        }
+
+        & .fear-img{
+            width: 100%;
+            height: 60%;
+            & img{
+                width: 45rem;
+            }
+        }
+    }
+
 }
 
 @media (width < 400px) {
