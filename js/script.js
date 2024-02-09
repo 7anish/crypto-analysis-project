@@ -131,12 +131,16 @@ if (screenWidth < 450) {
         <button class="light" onclick="themechnge()"><div class="sun"></div></button>
     </div>
     `
+    document.querySelector(".menu-bar").addEventListener('click' , (event)=>{
+        event.stopPropagation();
+    })
     viewOfMenuBar.addEventListener('click', () => {
         document.querySelector(".menu-bar-lines1").classList.toggle("menu-bar-lines10");
         document.querySelector(".menu-bar-lines2").classList.toggle("menu-bar-lines20");
         document.querySelector(".menu-bar-lines3").classList.toggle("menu-bar-lines30");
         document.querySelector(".menu-bar").classList.toggle("menu-bar1")
     })
+
 
 }
 if (screenWidth > 450) {

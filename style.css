@@ -1580,6 +1580,7 @@ textarea:focus {
     display: grid;
     place-content: center;
     filter: opacity(0);
+    /* display: none; */
     & ul {
         list-style: none;
         display: flex;
