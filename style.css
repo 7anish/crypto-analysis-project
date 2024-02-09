@@ -1521,7 +1521,12 @@ textarea:focus {
     }
 
     .header-links {
+        width: 7rem;
+        height: 7rem;
+        z-index: 2;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 0;
     }
 
@@ -1570,7 +1575,7 @@ textarea:focus {
 
 .menu-bar {
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0vh;
     z-index: 1;
     /* background-color: pink; */
