@@ -11,8 +11,10 @@ html {
     font-size: 62.5%;
     /* 1rem = 10px */
 }
-
-body {
+body{
+    position: relative;
+}
+.body {
     --light-button-color: #8343f1;
     --dark-button-color: #16151b;
     --optional-button-color: #35d8b7;
@@ -28,7 +30,6 @@ body {
     --sectio3-bg1: rgb(59, 51, 75);
     --section1-bg1: rgb(11, 9, 12);
     --section1-bg2: linear-gradient(180deg, rgba(11, 9, 12, 1) 1%, rgba(57, 25, 93, 1) 48%, rgba(46, 24, 83, 1) 68%, rgba(11, 9, 12, 1) 100%);
-
     --footerbgc: #000;
 }
 
@@ -1618,4 +1619,39 @@ textarea:focus {
 .menu-bar1{
     filter: opacity(1);
     animation: showmenu .35s 1 linear;
+}
+
+.pre-loader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--black-baground);
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+
+    & .circle{
+        width: 10rem;
+        aspect-ratio: 1;
+        background-color: transparent;
+        border-bottom: .8rem solid var(--purple);
+        border-left: .8rem solid var(--purple);
+        border-radius: 50%;
+        animation: pre-loader .5s infinite ease-in-out;
+    }
+}
+
+@keyframes pre-loader {
+    0%{
+        rotate: 0deg;
+    }
+
+    100%{
+        rotate: 360deg;
+    }
+}
+
+.complet-loader{
+    display: none;
 }

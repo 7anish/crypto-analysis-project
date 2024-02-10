@@ -8,3 +8,8 @@ const themechnge = () => {
     const sun = document.querySelector('.sun')
     sun.classList.toggle('sun1')
 }
+
+const loader = document.querySelector('.pre-loader')
+window.addEventListener('load', ()=>{
+    loader.classList.add("complet-loader");
+})
