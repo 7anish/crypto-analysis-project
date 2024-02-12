@@ -40,7 +40,7 @@ const next = document.querySelector(".next");
 let number = 0;
 console.log(number)
 next.addEventListener('click', () => {
-    next.innerHTML = "loding...";
+    next.innerHTML = "loading...";
     setTimeout(() => {
         number += 50;
         console.log(number);

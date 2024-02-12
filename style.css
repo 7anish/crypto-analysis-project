@@ -1581,7 +1581,7 @@ textarea:focus {
     z-index: 0;
     background-color: var(--black-baground);
     width: 100vw;
-    height: 40vh;
+    height: 35vh;
     display: grid;
     place-content: center;
     filter: opacity(0);
@@ -1592,7 +1592,6 @@ textarea:focus {
         justify-content: space-around;
         align-items: start;
         gap: 2.5rem;
-        margin-top: 5rem;
         margin-left: -20rem;
 
         & li a {
