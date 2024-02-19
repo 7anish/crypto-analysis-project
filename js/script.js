@@ -113,7 +113,7 @@ secTwo.addEventListener("mouseleave" , ()=>{
 const screenWidth = document.body.clientWidth;
 console.log(screenWidth);
 const viewOfMenuBar = document.querySelector(".header-links");
-if (screenWidth < 450) {
+if (screenWidth < 800) {
     viewOfMenuBar.innerHTML =
         `<div class="menu-bar-lines menu-bar-lines1"></div>
     <div class="menu-bar-lines menu-bar-lines2"></div>
@@ -143,7 +143,7 @@ if (screenWidth < 450) {
 
 
 }
-if (screenWidth > 450) {
+if (screenWidth > 800) {
     viewOfMenuBar.innerHTML = `<ul class="nav-list">
     <li><a href="./index.html">Home</a></li>
     <li><a href="./market/market.html">Market</a></li>

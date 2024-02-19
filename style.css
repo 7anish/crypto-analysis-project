@@ -578,8 +578,6 @@ hr {
             text-align: justify;
             padding-left: 1rem;
         }
-
-        /* background-color: antiquewhite; */
     }
 
     & .images-container {
@@ -1254,15 +1252,14 @@ textarea:focus {
     place-content: center;
     background: var(--section1-bg1);
     background: var(--section1-bg2);
-    /* background-color: pink */
-    filter: opacity(.9);
+    /* filter: opacity(.9); */
 
     & h1 {
         font-size: 6.8rem;
         font-weight: bolder;
         color: var(--white);
         text-transform: capitalize;
-        z-index: 5;
+        z-index: 0;
     }
 }
 
@@ -1549,13 +1546,132 @@ textarea:focus {
     }
 }
 
+/* ===================================== tab view  */
+
+@media (450px < width < 800px) {
+    /* ===============footer */
+    html{
+        font-size: 50%;
+    }
+
+    .header-links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: .1rem;
+    }
+
+    .mark-card-container{
+        padding: 5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mark-card{
+        transform: translate(0);
+    }
+
+    .light,
+    .login-button {
+        display: none;
+    }
+
+    .menu-bar{
+        min-height: 45vh;
+    }
+
+
+    /* ===========contaact */
+    .right{
+        display: none;
+    }
+
+    .cotact-form{
+        width: 70%;
+
+    }
+
+    .contact-hero{
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* =================home========== */
+    .box3{
+        display:none;
+    }
+
+    .one-heading{
+        width: 70vw;
+        font-size: 6rem;
+        margin-left: -20rem;
+    }
+
+    .section-three-container{
+
+        & .details {
+    
+            & h1 {
+                font-size: 3.4rem;
+            }
+    
+            & h4 {
+                font-size: 1.6rem;
+            }
+    
+            & p {
+                font-size: 1.6rem;
+                padding-left: 0;
+            }
+        }
+
+        & .images-container {
+
+            & img{
+                width: 35rem;
+            }
+        }
+    }
+
+    .crypto-heading {
+        text-align: center;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .about-one {
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    .about-container {
+        flex-direction: column;
+        padding-inline: 3rem;
+        gap: 0;
+
+        & .about-container-left {
+            width: 100%;
+        }
+
+        & .about-container-right {
+            & img {
+                width: 35rem;
+            }
+        }
+    }
+}
+
+
 .menu-bar-lines {
     background-color: var(--white);
     width: 4rem;
     height: .5rem;
     border-radius: 1.2rem;
     margin: .4rem 0;
-    z-index: 2;
+    z-index: 12;
 }
 
 .menu-bar-lines10 {
@@ -1578,13 +1694,14 @@ textarea:focus {
     position: absolute;
     left: 0;
     top: 10vh;
-    z-index: 0;
+    z-index: 10;
     background-color: var(--black-baground);
     width: 100vw;
     height: 35vh;
     display: grid;
     place-content: center;
     filter: opacity(0);
+    
     & ul {
         list-style: none;
         display: flex;
