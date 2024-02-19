@@ -1696,8 +1696,8 @@ textarea:focus {
     top: 10vh;
     z-index: 10;
     background-color: var(--black-baground);
-    width: 100vw;
-    height: 35vh;
+    width: 0vw;
+    height: 0vh;
     display: grid;
     place-content: center;
     filter: opacity(0);
@@ -1718,6 +1718,7 @@ textarea:focus {
             font-weight: bolder;
             color: var(--gray);
             margin: 0;
+            /* display: none; */
         }
     }
 
@@ -1733,6 +1734,8 @@ textarea:focus {
 }
 
 .menu-bar1{
+    width: 100vw;
+    height: 35vh;
     filter: opacity(1);
     animation: showmenu .35s 1 linear;
 }
